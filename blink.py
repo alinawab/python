@@ -31,7 +31,7 @@ def print_word(word, orpConfig):
     postfix = orpConfig
     stringToPrint = " " * prefix + insert_color(word, orp-1) + " " * postfix
 
-    print ("\r%s" % stringToPrint end='')
+    print ("\r%s" % stringToPrint, end='')
     print ("\r%s" % stringToPrint)
     sys.stdout.flush()    
 

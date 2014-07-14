@@ -13,6 +13,7 @@ print MY_STRING
 length = len(MY_STRING); 
 
 import time
+import sys
 
 # for i in range(length):
 #     time.sleep(0.1)
@@ -38,6 +39,21 @@ for word in words:
 sys.stdout.write("\n")
 print(NUM_WORDS);
 sys.stdout.write("Done and Done")
+sys.stdout.write("\n")
+
+def factorial(n):
+	if n == 1:
+		return 1
+	else:
+		res = n * factorial(n-1)
+		print("intermediate results for ", n , " * factorial (" , n-1, "): ",res)
+		return n * factorial(n-1)
+
+sys.stdout.write("\n")
+
+# uncomment below two lines to run recursive factorial
+# print("calling factorial on the number of words = " + str(NUM_WORDS))
+# print(factorial(NUM_WORDS))		
 
 # Compute the sum.
 # summation = 0
